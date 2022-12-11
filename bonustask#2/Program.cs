@@ -36,14 +36,7 @@ int[] FixArray(int[] InputArray)
     }
     for (int i = 0; i < FixArray.Length - 1; i++)
     {
-        if(FixArray[i + 1] == FixArray[i])
-        {
-            FixArray[i + 1] = FixArray[i + 1] + 1;
-        }
-        else
-        {
-            FixArray[i + 1] = FixArray[i + 1];
-        }
+        if (FixArray[i + 1] == FixArray[i]) { FixArray[i + 1] = FixArray[i + 1] + 1; }
     }
     return FixArray;
 }
